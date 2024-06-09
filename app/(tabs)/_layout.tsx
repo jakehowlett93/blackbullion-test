@@ -1,37 +1,28 @@
-import { Tabs } from 'expo-router';
+import {Image} from 'react-native'
+import { DrawerToggleButton } from '@react-navigation/drawer';
+import { Drawer } from 'expo-router/drawer';
 import React from 'react';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Drawer screenOptions={{
+        headerLeft: () => null,
+        headerRight: () => <DrawerToggleButton tintColor='white' />,
+        headerStyle: {backgroundColor: 'black'}
+        
       }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
-        }}
-      />
-    </Tabs>
+        <Drawer.Screen
+          name="index"
+          options={{
+            drawerLabel: 'Learning Pathways',
+            headerTitle: () => <Image source={require('@/assets/images/blackbullion.png')} style={{height: 60, width: 200, resizeMode: 'contain'}} />,
+          }}
+        />
+      </Drawer>
+    </GestureHandlerRootView>
   );
 }
