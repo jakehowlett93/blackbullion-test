@@ -6,6 +6,7 @@ import 'react-native-reanimated';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { DarkTheme, ThemeProvider } from '@react-navigation/native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -24,12 +25,14 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
+  const queryClient = new QueryClient()
 
   // const theme = {
   //   ...DarkTheme, 
   // }
 
   return (
+  <QueryClientProvider client={queryClient}>
     <ThemeProvider value={DarkTheme}>
       <SafeAreaProvider>
         <Stack>
@@ -38,5 +41,6 @@ export default function RootLayout() {
         </Stack>
       </SafeAreaProvider>
     </ThemeProvider>
+  </QueryClientProvider>
   );
 }
