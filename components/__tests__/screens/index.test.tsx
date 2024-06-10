@@ -1,7 +1,6 @@
 import React from "react";
 import { fireEvent, render, waitFor } from "@testing-library/react-native";
 import LibraryScreen from "../../../app/(tabs)/index";
-import * as hooks from "@/hooks/useLearningPathways";
 import { fetchLearningPathways as _fetchLearningPathways } from "@/api/fetchLearningPathways";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
