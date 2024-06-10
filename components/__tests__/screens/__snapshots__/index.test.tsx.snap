@@ -1,18 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LibraryScreen matches snapshot 1`] = `
-<RNCSafeAreaView
-  edges={
-    {
-      "bottom": "additive",
-      "left": "additive",
-      "right": "additive",
-      "top": "additive",
-    }
-  }
+<View
   style={
     {
       "backgroundColor": "rgb(242, 242, 242)",
+      "flex": 1,
     }
   }
 >
@@ -75,14 +68,456 @@ exports[`LibraryScreen matches snapshot 1`] = `
       </Text>
     </View>
   </View>
-  <Text
-    style={
-      {
-        "color": "white",
-      }
+  <RCTScrollView
+    data={
+      [
+        [
+          {
+            "duration": "9 min",
+            "has_summative_assessment": false,
+            "id": 12,
+            "image": "https://prodcontent.blackbullion.com/images/pathways/12/thumb",
+            "internal_title": "KS4",
+            "intro": "",
+            "title": "KS4",
+            "type": "pathway",
+            "url": "https://www.blackbullion.com/pathways/key-stage-4",
+          },
+          {
+            "duration": "11 min",
+            "has_summative_assessment": true,
+            "id": 24,
+            "image": "https://prodcontent.blackbullion.com/images/pathways/24/thumb",
+            "internal_title": "Starting University",
+            "intro": "Learn what funding is available when you start uni and how you can get the best out of it.",
+            "title": "Starting University",
+            "type": "pathway",
+            "url": "https://www.blackbullion.com/pathways/starting-university-uk",
+          },
+        ],
+      ]
     }
+    extraData={750}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={[]}
+    style={
+      [
+        {
+          "paddingTop": 10,
+        },
+        {},
+      ]
+    }
+    viewabilityConfigCallbackPairs={[]}
   >
-    No pathways available
-  </Text>
-</RNCSafeAreaView>
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "flexDirection": "row",
+                "paddingBottom": 10,
+                "paddingLeft": 10,
+              },
+              {
+                "marginBottom": 10,
+              },
+              undefined,
+              {},
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginRight": 10,
+                  "width": 360,
+                },
+                {
+                  "alignItems": "center",
+                  "justifyContent": "space-around",
+                  "marginBottom": 15,
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="Navigate to KS4"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              role="button"
+              style={
+                [
+                  {
+                    "borderRadius": 12,
+                    "height": 320,
+                    "width": 300,
+                  },
+                  {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                  },
+                ]
+              }
+            >
+              <View>
+                <View
+                  accessibilityIgnoresInvertColors={true}
+                  style={
+                    {
+                      "borderTopLeftRadius": 12,
+                      "borderTopRightRadius": 12,
+                      "height": 170,
+                      "justifyContent": "flex-end",
+                      "overflow": "hidden",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      {
+                        "uri": "https://prodcontent.blackbullion.com/images/pathways/12/thumb",
+                      }
+                    }
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                        },
+                        {
+                          "height": 170,
+                          "width": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      {
+                        "alignSelf": "flex-start",
+                        "backgroundColor": "white",
+                        "borderRadius": 8,
+                        "justifyContent": "center",
+                        "margin": 4,
+                        "opacity": 0.7,
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 2,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "color": undefined,
+                          },
+                          undefined,
+                          undefined,
+                          undefined,
+                          {
+                            "color": "black",
+                            "fontSize": 14,
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      Pathway - 9 min
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "margin": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                      },
+                      undefined,
+                      {
+                        "color": "#663C97",
+                        "fontSize": 20,
+                        "fontWeight": "bold",
+                        "lineHeight": 32,
+                      },
+                      undefined,
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  KS4
+                </Text>
+                <Text
+                  numberOfLines={3}
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                      },
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "marginRight": 10,
+                  "width": 360,
+                },
+                {
+                  "alignItems": "center",
+                  "justifyContent": "space-around",
+                  "marginBottom": 15,
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityLabel="Navigate to Starting University"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              role="button"
+              style={
+                [
+                  {
+                    "borderRadius": 12,
+                    "height": 320,
+                    "width": 300,
+                  },
+                  {
+                    "backgroundColor": "rgb(255, 255, 255)",
+                  },
+                ]
+              }
+            >
+              <View>
+                <View
+                  accessibilityIgnoresInvertColors={true}
+                  style={
+                    {
+                      "borderTopLeftRadius": 12,
+                      "borderTopRightRadius": 12,
+                      "height": 170,
+                      "justifyContent": "flex-end",
+                      "overflow": "hidden",
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <Image
+                    source={
+                      {
+                        "uri": "https://prodcontent.blackbullion.com/images/pathways/24/thumb",
+                      }
+                    }
+                    style={
+                      [
+                        {
+                          "bottom": 0,
+                          "left": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                        },
+                        {
+                          "height": 170,
+                          "width": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                  />
+                  <View
+                    style={
+                      {
+                        "alignSelf": "flex-start",
+                        "backgroundColor": "white",
+                        "borderRadius": 8,
+                        "justifyContent": "center",
+                        "margin": 4,
+                        "opacity": 0.7,
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 2,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "color": undefined,
+                          },
+                          undefined,
+                          undefined,
+                          undefined,
+                          {
+                            "color": "black",
+                            "fontSize": 14,
+                          },
+                          undefined,
+                        ]
+                      }
+                    >
+                      Pathway - 11 min
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "margin": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                      },
+                      undefined,
+                      {
+                        "color": "#663C97",
+                        "fontSize": 20,
+                        "fontWeight": "bold",
+                        "lineHeight": 32,
+                      },
+                      undefined,
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  Starting University
+                </Text>
+                <Text
+                  numberOfLines={3}
+                  style={
+                    [
+                      {
+                        "color": undefined,
+                      },
+                      {
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      },
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  Learn what funding is available when you start uni and how you can get the best out of it.
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
 `;
