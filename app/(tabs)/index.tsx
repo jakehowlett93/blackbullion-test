@@ -51,7 +51,7 @@ export default function LibraryScreen() {
 
   return (
     <SafeAreaView style={{backgroundColor: colors.background}}>
-      {isPathwaysError && <Text>An error has occured</Text>}
+      {isPathwaysError && <Text>An error has occurred</Text>}
       <FilterPillBar filters={filters} handleFilterPress={handleFilterPress} />
       {filteredPathways && filteredPathways.length > 0 ?
         <FlatGrid
