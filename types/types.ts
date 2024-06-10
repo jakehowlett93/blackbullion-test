@@ -9,3 +9,7 @@ export type Pathway = {
   type: string,
   has_summative_assessment: boolean,
 }
+
+export type PathwayFilters = {
+  assessment: boolean,
+}
