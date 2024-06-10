@@ -1,11 +1,10 @@
+import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
 import 'react-native-reanimated';
-
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { DarkTheme, ThemeProvider } from '@react-navigation/native';
+import { DarkTheme, Theme, ThemeProvider } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -27,13 +26,17 @@ export default function RootLayout() {
   }
   const queryClient = new QueryClient()
 
-  // const theme = {
-  //   ...DarkTheme, 
-  // }
+  const theme: Theme = {
+    ...DarkTheme,
+    colors: {
+      ...DarkTheme.colors,
+      card: '#F2F3F4'
+    }
+  }
 
   return (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider value={DarkTheme}>
+    <ThemeProvider value={theme}>
       <SafeAreaProvider>
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
