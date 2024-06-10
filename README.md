@@ -1,50 +1,34 @@
-# Welcome to your Expo app 👋
+# Blackbullion Tech Test
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A library style screen to display the different learning pathways available to users. There is a filtering feature to filter by assessment.
 
-## Get started
+Created using:
 
-1. Install dependencies
+- React Native with the Expo framework
+- React Query & axios
+- react-native-super-grid
 
-   ```bash
-   npm install
-   ```
+Time spent: 4 - 5 hours spread over a couple of days. Longer than I might typically spend on a tech test but as I've not done mobile dev before I had a bunch of reading to do to get up to speed. I've been meaning to try React native too so it was a fun little project.
 
-2. Start the app
+## To start the project
 
-   ```bash
-    npx expo start
-   ```
+- run `npm i` to install dependencies
+- then `npm start` to start the Metro bundler
+- from here the project can be launched on web / ios / android (assuming, as expo is mentioned in the job ad, that the ios / android dependencies are already installed)
+- `npm test` for tests
 
-In the output, you'll find options to open the app in a
+## If I had more time / If this was a production app:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- I would improve the ellipsis on the intro text as they don't always work. The relevant prop for Text seems to be numberOfLines, but I didn't have time to find a way to account for the title sometimes being more than 1 line long which reduces the amount of lines available to the intro.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- I would flesh out the the different states i.e show some kind of spinner / loader when isPathwaysLoading is true, and add more robust error handling with meaningful messages.
 
-## Get a fresh project
+- I don't think I fully utilised themes and I ignored light mode / dark mode in favour of focusing on a forced dark mode theme for brevity. I'd use more time to read up on themes. In a production app I'd be tempted to use a css framework which is a common thing in web dev but I see some sentiment against using one for mobile dev when i google around it.
 
-When you're ready, run:
+- In a production app I'd lean towards using a component library rather than building my own ones.
 
-```bash
-npm run reset-project
-```
+- As for testing I only did some basic unit / integration / snapshot tests, in a production app I'd also add E2E tests and utilise MSW. The tests would look quite different with MSW (which is what I'm used to using but didn't have time to set up), so tests written like this is not something i'd expect to see in a production app. I also couldn't nail down why a worker was hanging.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- I'd add more filters, it would be fairly straightforward to filter by duration. A search bar would also be useful.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- In terms of design the cards could probably be a bit smaller with a smaller image so that more fit on the screen. I'm used to designing for the web where there's more space, with more time I'd likely change them a fair amount. I didn't get a chance to spend any time on styling the drawer menu.
